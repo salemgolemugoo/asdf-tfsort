@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
-#set -euo pipefail
+set -euo pipefail
 
 GH_REPO="https://github.com/AlexNabokikh/tfsort.git"
 URL_REPO=$(echo "$GH_REPO" | sed 's/\.git$//')
