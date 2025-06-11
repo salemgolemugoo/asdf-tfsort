@@ -38,7 +38,7 @@ download_release() {
 	local version filename url
 	version="$1"
 	filename="$2"
-	echo $filename
+
 	local platform arch
 	[ "Linux" = "$(uname)" ] && platform="linux" || platform="darwin"
 
