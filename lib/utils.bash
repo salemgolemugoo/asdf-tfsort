@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -x
+#set -euo pipefail
 
 GH_REPO="https://github.com/AlexNabokikh/tfsort.git"
 URL_REPO=$(echo "$GH_REPO" | sed 's/\.git$//')
@@ -38,7 +39,7 @@ download_release() {
 	local version filename url
 	version="$1"
 	filename="$2"
-
+	echo $filename
 	local platform arch
 	[ "Linux" = "$(uname)" ] && platform="linux" || platform="darwin"
 
